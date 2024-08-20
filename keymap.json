@@ -1,0 +1,10 @@
+[
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-a": "editor::MoveToBeginningOfLine",
+      "ctrl-e": "editor::MoveToEndOfLine",
+      "ctrl-shift-backspace": ["editor::DeleteLine", "editor::Copy"]
+    }
+  }
+]
