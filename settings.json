@@ -7,6 +7,17 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "ssh_connections": [
+    {
+      "host": "10.111.73.55",
+      "username": "narens",
+      "projects": [
+        {
+          "paths": ["~/Developer/opensource/pytorch_org/tensorrt"]
+        }
+      ]
+    }
+  ],
   "assistant": {
     "default_model": {
       "provider": "zed.dev",
@@ -29,9 +40,15 @@
     "C++": {
       "format_on_save": "off",
       "tab_size": 2
+    },
+    "Markdown": {
+      "format_on_save": "prettier",
+      "soft_wrap": "editor_width",
+      "wrap_guides": []
     }
   },
   "autosave": "on_focus_change",
+  "wrap_guides": [120],
   "jupyter": {
     "kernel_selections": {
       "python": "torch250_py312d"
