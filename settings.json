@@ -7,8 +7,16 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "edit_predictions": {
+    "mode": "subtle",
+    "copilot": {
+      "proxy": null,
+      "proxy_no_verify": null
+    },
+    "enabled_in_assistant": false
+  },
   "icon_theme": "Colored Zed Icons Theme Dark",
-  "base_keymap": "Emacs",
+  "base_keymap": "VSCode",
   "features": {
     "edit_prediction_provider": "zed"
   },

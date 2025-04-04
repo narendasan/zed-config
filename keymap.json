@@ -6,5 +6,12 @@
       "ctrl-e": "editor::MoveToEndOfLine",
       "ctrl-shift-backspace": ["editor::DeleteLine", "editor::Copy"]
     }
+  },
+  {
+    "context": "Editor && edit_prediction_conflict",
+    "bindings": {
+      // Here we bind tab to accept even when there's a language server completion
+      "tab": "editor::AcceptEditPrediction"
+    }
   }
 ]
